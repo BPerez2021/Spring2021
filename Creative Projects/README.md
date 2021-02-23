@@ -10,16 +10,14 @@ _note:_
 _this current file is a draft, it will be updated as I play with the code and edit some of the text files._
 
 ## Texts used:
+
+(Myths)
+
 Homer's "Illiad"
 
 "A Book of Myths" by Jean Lang
 
+(History)
+
 "The Beginner's American History" by D. H. Montgomery
 
-## **Some of my favorite generated lines:**
-"Fool was I, and there was no more come back from him ruin and bane. 
-Let us drag down all together to celebrate. 
-What is said of his great-grandson, Hrothgar, that there was a beautiful star."
-
-"When it was in vain. 
-What is said of her, to his father's eight-footed steed, he followed a number of years it stood there."
