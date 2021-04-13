@@ -1,3 +1,4 @@
+Creative Project 2
 
 This project is meant to help assist a writer in creating Characters, Prompts, Settings, Sidekicks, and Endings.
 
