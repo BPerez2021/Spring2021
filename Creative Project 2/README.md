@@ -12,9 +12,12 @@ This can also make an incredible tool for creative writing courses, to provide w
 When I was in undergrad, in the creative writing course, the prompts seemed too familiar to one another, with this generator, it can create inventive prompts as well as add the different portions of the story (characters, setting, sidekick, and ending). This can be beneficial in challeging the students by giving them different characters under the same prompt or other same-to-different combinations. 
 
 The called upon phrases include:
+
 Place one of these words in place of the "...": (character, setting, prompt, sidekick, and ending)
 
 
 "Help me create a ..." 
+
 "Another..."
+
 "Create a ..."
