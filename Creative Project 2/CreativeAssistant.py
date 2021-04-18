@@ -3,8 +3,9 @@ import random
 import secrets
 
 
-def lambda_handler(event, context):
 
+def lambda_handler(event, context):
+    
     # TODO implement
     result = {
         "dialogAction":
@@ -17,17 +18,6 @@ def lambda_handler(event, context):
         }
     }
     
-    #Character
-FName = ("Sarah", "Matthew","Jimmy", "Jordan", "Sam", "Kimberly", "Joanna", "Marti", "Michele", "Hanna", "Michael", "Tristian", "Isiah", "Roxanne", "Bernard", "Brian", "Norman", "Matt", "Jake", "Ranelle", "Frankie", "Annie", "Roberta", "Rob", "Mona", "Jackson", "Timothy", "Jasmine", "Beatrice", "Barth", "Roger", "Chris", "Missy", "Vickie", "Walter", "Vanessa", "Rachel", "Nikki", "Steph", "Steven", "Yvann", "Ivan", "Alyssa", "Katie", "Catherine", "Rose", "Andi", "Andy", "Max", " Tony", "Toni", "Millie", "Zachary", "Angel", "Julian", "Bella", "Isabella", "Pat", "Friday", "Wednesday", "Lina", "Rain", "Pheobe", "Penny")
-LName = ("Diaz", "Smith", "Perez", "Johnson", "Williams", "Miller", "Jones", "Davis", "Garcia", "Brown", "Rodriguez", "Wilson", "Martinez", "Taylor", "Anderson", "Hernandez", "Moore", "Pagano", "Greene", "Innocent", "Martin", "Lopez", "Lee", "Harris", "Gonzalez", "Hall", "Lewis", "Robinson", "Walker", "Clark" "Young", "King", "Wright", "Scott", "Torres", "Nguyen", "Allen", "Flores", "Nelson", "Rivera", "Campbell", "Gomez", "Phillips", "Evans", "Turner", "Cruz", "Morris", "Murphy", "Morales", "Cook","Rogers", "Peterson", "Reed", "Bailey", "Howard","Ramos", "Chavez", "Wood", "Bennet", "Cox", "Mendoza", "Price", "Alvarez", "Gray", "Hughes")
-HairColor = ("red", "pink", "purple", "blonde", "blue", "brunette", "green", "gray", "white", "black", "rainbow colored", "blonde with pink stripes", "blonde with pink highlights", "black with blue stipes", "brown with high lights")
-Hairdesc = ("short", "shoulder length", "bob", "curly", "wavy", "long", "straight", "with bangs", "pixie") 
-Likes = ("Basketball", "dogs", "cats", "the color pink", "the color teal", "inventing", "science", "art", "money", "food", "sleep", "dancing", "research", "jumping out of planes", "pranking people", "best friend", "brother", "family", "cooking", "baking", "drawing", "gossiping", "shopping", "acting", "pizza", "ice cream", "high-fives", "rollar coaters", "buddy cop movies")
-Dislikes = ("homework", "Bob", "plants", "bugs", "movies", "legos", "cake", "flash mobs", "people who can't sing", "whistling", "pickles", "fish", "golf", "hecklers", "reality television", "being the butt of the joke" "riding in the back of a car", "long road trips", "lines", "creepy dolls", "peanut butter", "waking up", "alarms", "the heat", "dressed up animals", "loud eating", "stale chips")
-   
-if event["currentIntent"]["name"] == "Character":
-    result["dialogAction"]["message"]["content"] =  ("Character Name: " + random.choice(FName) + " "+ random.choice(LName) + " Age: " +  random.choice(range(15, 500)) + " Hair: " + random.choice(HairLength) + " and " + random.choice(Hairdesc) + " Likes: " + random.choice(Likes) + ", " + random.choice(Likes) + ", and  " + random.choice(Likes) + ". Dislikes: " + random.choice(Dislikes) + " and " + random.choice(Dislikes))
-            
     
     #Prompt
 Genre = ("romance", "comedy", "horror", "thriller", "drama", "sci-fi", "dystopian", "historical romance", "action", "supernatural", "vampire", "werewolf", "alien", "children's", "young adult", "high school")
@@ -51,49 +41,30 @@ relationship = ("best friend", "brother", "sister", "grandmother", "dog", "cat",
 characteristic = ("sings", "dances", "talks", "lies", "steals", "jokes", "runs away", "eats", "cooks", "pranks", "plans", "high fives", "sketches", "writes down everything", "remembers everything", "forgets everything", "gives horrible advice", "talks about themself", "takes control", "mishears information", "ignores the main character", "replies sarcastically")
 
 if event["currentIntent"]["name"] == "Sidekick":
-    result["dialogAction"]["message"]["content"] = ("The main character's " + random.choice(relationship) + " who always " + random.choice(characteristic) + " and " + random.choice(characteristic))
+   result["dialogAction"]["message"]["content"] = ("The main character's " + random.choice(relationship) + " who always " + random.choice(characteristic) + " and " + random.choice(characteristic))
     
     #Setting
         #time of story
 time = ("modern", "1700s", "1800s", "1900s", "futuristic", "dystopian" )
 place = ("New York", "San Fransisco", "Miami", "Madrid", "Costa Rica", "Cuba", "Puerto Rico", "Sacramento", "Austin, Texas", "Paris", "London", "Rome", "Bangkok", "Singapore", "Hong Kong", "Dubai", "Istanbul", "Tokyo", "Barcelona", "Las Vegas", "Shanghai", "Seoul", "Mumbai", "Taipei")
-    #time of year
+        #time of year
 TofY = ("Christmas", "football season", "New Years", "spring", "winter", "fall", "summer", "July", "August", "June", "April", "December", "October", "November", "January", "Feburary", "March", "May", "September", "Fourth of July", "Halloween", "Thanksgiving", "the ides of March")
 people = ("a large group of fans", "a hoard of zombies", "no one around", "three different dance mobs", "two fighting gangs", "an evil scientist trying to take over the tri-state area", "some bad acting aliens observing the population", "a famous talking cat")
 
 if event["currentIntent"]["name"] == "Setting":
-    result["dialogAction"]["message"]["content"] = ("Set in   " + random.choice(time) + " " + random.choice(place) + ". During " + random.choice(TofY) + ", with " + random.choice(people) + ".")
+    result["dialogAction"]["message"]["content"]["fulfillmentState"] = ("Set in   " + random.choice(time) + " " + random.choice(place) + ". During " + random.choice(TofY) + ", with " + random.choice(people) + ".")
     
     
+    #Character#
+FName = ("Sarah", "Matthew","Jimmy", "Jordan", "Sam", "Kimberly", "Joanna", "Marti", "Michele", "Hanna", "Michael", "Tristian", "Isiah", "Roxanne", "Bernard", "Brian", "Norman", "Matt", "Jake", "Ranelle", "Frankie", "Annie", "Roberta", "Rob", "Mona", "Jackson", "Timothy", "Jasmine", "Beatrice", "Barth", "Roger", "Chris", "Missy", "Vickie", "Walter", "Vanessa", "Rachel", "Nikki", "Steph", "Steven", "Yvann", "Ivan", "Alyssa", "Katie", "Catherine", "Rose", "Andi", "Andy", "Max", " Tony", "Toni", "Millie", "Zachary", "Angel", "Julian", "Bella", "Isabella", "Pat", "Friday", "Wednesday", "Lina", "Rain", "Pheobe", "Penny")
+LName = ("Diaz", "Smith", "Perez", "Johnson", "Williams", "Miller", "Jones", "Davis", "Garcia", "Brown", "Rodriguez", "Wilson", "Martinez", "Taylor", "Anderson", "Hernandez", "Moore", "Pagano", "Greene", "Innocent", "Martin", "Lopez", "Lee", "Harris", "Gonzalez", "Hall", "Lewis", "Robinson", "Walker", "Clark" "Young", "King", "Wright", "Scott", "Torres", "Nguyen", "Allen", "Flores", "Nelson", "Rivera", "Campbell", "Gomez", "Phillips", "Evans", "Turner", "Cruz", "Morris", "Murphy", "Morales", "Cook","Rogers", "Peterson", "Reed", "Bailey", "Howard","Ramos", "Chavez", "Wood", "Bennet", "Cox", "Mendoza", "Price", "Alvarez", "Gray", "Hughes")
+HairColor = ("red", "pink", "purple", "blonde", "blue", "brunette", "green", "gray", "white", "black", "rainbow colored", "blonde with pink stripes", "blonde with pink highlights", "black with blue stipes", "brown with high lights")
+Hairdesc = ("short", "shoulder length", "bob", "curly", "wavy", "long", "straight", "with bangs", "pixie") 
+Likes = ("Basketball", "dogs", "cats", "the color pink", "the color teal", "inventing", "science", "art", "money", "food", "sleep", "dancing", "research", "jumping out of planes", "pranking people", "best friend", "brother", "family", "cooking", "baking", "drawing", "gossiping", "shopping", "acting", "pizza", "ice cream", "high-fives", "rollar coaters", "buddy cop movies")
+Dislikes = ("homework", "Bob", "plants", "bugs", "movies", "legos", "cake", "flash mobs", "people who can't sing", "whistling", "pickles", "fish", "golf", "hecklers", "reality television", "being the butt of the joke" "riding in the back of a car", "long road trips", "lines", "creepy dolls", "peanut butter", "waking up", "alarms", "the heat", "dressed up animals", "loud eating", "stale chips")
+   
+if event["currentIntent"]["name"] == "Character":
+    result["dialogAction"]["message"]["content"] = ("Character Name: " + random.choice(FName) + " " + random.choice(LName) + " Age: " +  random.choice(range(15, 500)) + " Hair: " + random.choice(HairLength) + " and " + random.choice(Hairdesc) + " Likes: " + random.choice(Likes) + ", " + random.choice(Likes) + ", and  " + random.choice(Likes) + ". Dislikes: " + random.choice(Dislikes) + " and " + random.choice(Dislikes))
     
-    
-    
-    
-elif event["currentIntent"]["name"] == "RandomNumber":
-    upper = event["currentIntent"]["slots"]["upper"]
-    lower = event["currentIntent"]["slots"]["lower"]
-        # Do the intent 1
-    randomNum = str(random.randint(lower, upper))
-    result["dialogAction"]["message"]["content"] = "Your random number is " + randomNum
-    if event["sessionAttributes"]:
-            result["dialogAction"]["message"]["content"] += ". The last random number was " + \
-                event["sessionAttributes"]["lastNumber"]
-    result["sessionAttributes"] = {
-            "lastNumber": randomNum,
-            "lower": event["currentIntent"]["slots"]["lower"],
-            "upper": event["currentIntent"]["slots"]["upper"]}
-elif event["currentIntent"]["name"] == "AskAusten":
-    with open("./austen-pride-and-prejudice.txt") as f:
-            text = f.read()
-            # Build the model.
-            text_model = markovify.Text(text)
-            sentences = []
-            # Print five randomly-generated sentences
-            for i in range(5):
-                # Print three randomly-generated sentences of no more than 280 characters
-                sentences.append(text_model.make_sentence())
-            result["dialogAction"]["message"]["content"] = ". ".join(sentences)
-elif event["currentIntent"]["name"] == "AddNumbers":
-        # Handle intent 2
-        result["dialogAction"]["message"]["content"] = upper+lower
+
 print(result)
