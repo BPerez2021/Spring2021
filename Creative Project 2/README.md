@@ -25,4 +25,4 @@ Place one of these words in place of the "...": (character, setting, prompt, sid
 
 
 
-Note: I thought I had this working but when I went back to check it it kept giving response as thought "Return parameters to client" under "Fullfillment" the editing portion of the bot. I checked and edited and toyed with the code trying to fix it but I have yet to find a conclusion to my problem, may end up contacting you, Prof, Monday to explain issues. 
+Note: I thought I had this working but when I went back to check it it kept giving response as thought "Return parameters to client" under "Fullfillment" the editing portion of the bot. I checked and edited and toyed with the code trying to fix it but I have yet to find a conclusion to my problem, may end up contacting you, Prof, Tuesday to get advisement. First I want to test out some theories that could fix it.
