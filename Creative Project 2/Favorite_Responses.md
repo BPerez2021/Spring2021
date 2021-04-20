@@ -1,4 +1,4 @@
-Character
+# Character
 
 Your character's name should be Mona Nelson and they are 180 years old. Their hair is curly and it is white. They like cooking, acting, and inventing. They don't like loud eating or peanut butter
 
@@ -8,7 +8,7 @@ Your character's name should be Penny Harris and they are 166 years old. Their h
 
 
 
-Setting
+# Setting
 
 It should be set in dystopian Taipei, during March, with some bad acting aliens observing the population.
 
@@ -17,17 +17,14 @@ It should be set in futuristic Singapore, during January, with two fighting gang
 
 
 
-Sidekick
+# Sidekick
 
 The main character's sidekick should be their neighborhood grocery store owner who always high fives and cooks
 
 The main character's sidekick should be their cousin who always steals and gives horrible advice
 
 
-
-
-
-Ending
+# Ending
 
 In the end, the main character is reincarnated
 
