@@ -33,7 +33,7 @@ In the end, the main character realizes their dream of becomeing a prima balleri
 
 
 
-Prompt
+# Prompt
 
 Here is a prompt: A dystopian story about a CEO and his assistant who teach a group of hidden vampires and run a cartel.
 
