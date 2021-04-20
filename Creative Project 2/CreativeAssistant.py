@@ -45,11 +45,11 @@ def lambda_handler(event, context):
         
         #Setting
             #time of story
-    time = ("modern", "1700s", "1800s", "1900s", "futuristic", "dystopian" )
+    time = ("modern", "1700s", "1800s", "1900s", "futuristic", "dystopian", "alternate Universe", "historic" )
     place = ("New York", "San Fransisco", "Miami", "Madrid", "Costa Rica", "Cuba", "Puerto Rico", "Sacramento", "Austin, Texas", "Paris", "London", "Rome", "Bangkok", "Singapore", "Hong Kong", "Dubai", "Istanbul", "Tokyo", "Barcelona", "Las Vegas", "Shanghai", "Seoul", "Mumbai", "Taipei")
             #time of year
     TofY = ("Christmas", "football season", "New Years", "spring", "winter", "fall", "summer", "July", "August", "June", "April", "December", "October", "November", "January", "Feburary", "March", "May", "September", "Fourth of July", "Halloween", "Thanksgiving", "the ides of March")
-    people = ("a large group of fans", "a hoard of zombies", "no one around", "three different dance mobs", "two fighting gangs", "an evil scientist trying to take over the tri-state area", "some bad acting aliens observing the population", "a famous talking cat")
+    people = ("a large group of anime fans", "a hoard of zombies", "no one around", "three different dance mobs", "two fighting gangs", "an evil scientist trying to take over the tri-state area", "some bad acting aliens observing the population", "a famous talking cat", "horde of vampires", "never aging population", "a mysterious lighthouse", "random thunderstorm every 4 days", "no moon")
 
     if event["currentIntent"]["name"] == "Setting":
         result["dialogAction"]["message"]["content"] = ("It should be set in   " + random.choice(time) + " " + random.choice(place) + ", during " + random.choice(TofY) + ", with " + random.choice(people) + ".")
@@ -64,7 +64,7 @@ def lambda_handler(event, context):
     Dislikes = ("homework", "Bob", "plants", "bugs", "movies", "legos", "cake", "flash mobs", "people who can't sing", "whistling", "pickles", "fish", "golf", "hecklers", "reality television", "being the butt of the joke", "riding in the back of a car", "long road trips", "lines", "creepy dolls", "peanut butter", "waking up", "alarms", "the heat", "dressed up animals", "loud eating", "stale chips")
     
     if event["currentIntent"]["name"] == "Character":
-        result["dialogAction"]["message"]["content"] = ("Your character's name should be " + random.choice(FName) + " " + random.choice(LName) + " and they are " +  str(random.choice(range(15, 250))) + " years old. Their hair is " + random.choice(Hairdesc) + " and it is " + random.choice(HairColor) + ". They like " + random.choice(Likes) + ", " + random.choice(Likes) + ", and  " + random.choice(Likes) + ". They don't like " + random.choice(Dislikes) + " or " + random.choice(Dislikes))
+        result["dialogAction"]["message"]["content"] = ("Your character's name should be " + random.choice(FName) + " " + random.choice(LName) + " and they are " +  str(random.choice(range(15, 40))) + " years old. Their hair is " + random.choice(Hairdesc) + " and it is " + random.choice(HairColor) + ". They like " + random.choice(Likes) + ", " + random.choice(Likes) + ", and  " + random.choice(Likes) + ". They don't like " + random.choice(Dislikes) + " or " + random.choice(Dislikes))
         
 
     return result
